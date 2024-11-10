@@ -1,0 +1,19 @@
+import tensorflow as tf
+
+hello = tf.constant('Hello, TensorFlow!')
+print(hello)
+print(hello.numpy())
+
+a = tf.constant(2)
+b = tf.constant(3)
+c = tf.constant(5)
+
+add = tf.add(a, b)
+sub = tf.subtract(a, b)
+mul = tf.multiply(a, b)
+div = tf.divide(a, b)
+
+print("add = ", add.numpy())
+print("sub = ", sub.numpy())
+print("mul = ", mul.numpy())
+print("div = ", div.numpy())
